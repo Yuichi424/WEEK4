@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="../public/Content/app.css" type="text/css">
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-7"><%= title %> Me!</h1>
+      <p>Please contact me by the email bellow</p>
+      <a href="mailto:yu.bu.1991.0424@gmail.com">yu.bu.1991.0424@gmail.com</a>
+    </div>
+    <form>
+        <table>
+            <tr><td><label>First Name:<input type="text" name="fistName" placeholder="First name" ></label></td></tr>
+            <tr><td><label>Last Name:<input type="text" name="lastName" placeholder="Last name" ></label></td></tr>
+            <tr><td><label>Tel:<input type="tel" name="telNum" placeholder="(123)-457-8910"></label></td></tr>
+            <tr><td><label> Email: <input type="email" name="email" ></label></td></tr>
+            <tr><td><label>Message:<textarea name="comment" cols="40" rows="10"></textarea></label></td></tr>
+            <tr>
+                <td>
+                    <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
