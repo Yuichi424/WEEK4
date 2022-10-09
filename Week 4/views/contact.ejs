@@ -8,23 +8,20 @@
   <main class="container">
     <div class="jumbotron">
       <h1 class="display-7"><%= title %> Me!</h1>
-      <p>Please contact me by the email bellow</p>
-      <a href="mailto:yu.bu.1991.0424@gmail.com">yu.bu.1991.0424@gmail.com</a>
     </div>
     <form>
-        <table>
-            <tr><td><label>First Name:<input type="text" name="fistName" placeholder="First name" ></label></td></tr>
-            <tr><td><label>Last Name:<input type="text" name="lastName" placeholder="Last name" ></label></td></tr>
-            <tr><td><label>Tel:<input type="tel" name="telNum" placeholder="(123)-457-8910"></label></td></tr>
-            <tr><td><label> Email: <input type="email" name="email" ></label></td></tr>
-            <tr><td><label>Message:<textarea name="comment" cols="40" rows="10"></textarea></label></td></tr>
-            <tr>
-                <td>
-                    <button type="submit">submit</button>
-                    <button type="reset">reset</button>
-                </td>
-            </tr>
-        </table>
+        <div><label>First Name:<input type="text" name="fistName" placeholder="First name" ></label></div>
+        <div><label>Last Name:<input type="text" name="lastName" placeholder="Last name" ></label></div>
+        <div><label>Tel:<input type="tel" name="telNum" placeholder="(123)-457-8910"></label></div>
+        <div><label> Email: <input type="email" name="email" ></label></div>
+        <div><label>Message:<textarea name="comment" cols="40" rows="5"></textarea></label></div>
+            
+         <dv>
+             <!-- <button type="submit">submit</button>
+             <button type="reset">reset</button> -->
+             <a href="../views/home.ejs">SUBMIT</a>
+         </dv>
+        
     </form>
   </main>
   
