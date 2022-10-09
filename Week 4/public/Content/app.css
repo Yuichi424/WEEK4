@@ -1,0 +1,7 @@
+/* custom css goes here */
+form{
+    width: 150px;
+    float:left;
+    clear:both;
+    margin-right:30;
+}
