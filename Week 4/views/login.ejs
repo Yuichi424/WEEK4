@@ -1,0 +1,27 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+  
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="jumbotron">
+      <h1 class="display-7"><%= title %> Me!</h1>
+    </div>
+    <form>
+        <div><label>First Name:<input type="text" name="fistName" placeholder="First name" ></label></div>
+        <div><label>Last Name:<input type="text" name="lastName" placeholder="Last name" ></label></div>
+        <div><label>Password:<input type="password" name="pass" ></label></div>
+         <dv>
+             <!-- <button type="submit">submit</button>
+             <button type="reset">reset</button> -->
+             <a href="../views/home.ejs">SUBMIT</a>
+         </dv>
+        
+    </form>
+  </main>
+  
+<%- include partials/bottom_nav.ejs %>  
+
+<%- include partials/footer.ejs %>
+  
