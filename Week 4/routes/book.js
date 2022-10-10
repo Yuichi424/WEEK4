@@ -14,9 +14,9 @@ router.get('/', (req, res, next) => {
         }
         else
         {
-            //console.log(BookList);
+            console.log(BookList);
 
-            res.render('book', {title: 'Book List', BookList: bookList})            
+            // res.render('book', {title: 'Book List', BookList: bookList})            
         }
     });
 });

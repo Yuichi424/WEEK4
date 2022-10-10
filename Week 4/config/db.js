@@ -6,5 +6,5 @@
 /*connect with mongodb */
 module.exports = 
 {
-    "URI": "mongodb://localhost/book_store"
+    "URI": "mongodb://localhost/users_store"
 }
