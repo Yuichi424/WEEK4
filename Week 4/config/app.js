@@ -3,18 +3,18 @@
    Student ID  : 301216594
    Date        : 2022-10-09*/
 
-// installed 3rd party packages
+//  install other packages
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-// database setup
+// require paths' routes
 let mongoose = require('mongoose');
 let DB = require('./db');
 
-// point mongoose to the DB URI
+// point mongoose to the DB URI/// this is not regard to 
 // mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 // let mongoDB = mongoose.connection;
@@ -59,5 +59,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', { title: 'Error'});
 });
-
+// return the application object
 module.exports = app;
