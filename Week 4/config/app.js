@@ -14,14 +14,15 @@ let logger = require('morgan');
 let mongoose = require('mongoose');
 let DB = require('./db');
 
-// point mongoose to the DB URI/// this is not regard to 
-mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
+// commented out for assignment 1
+// // point mongoose to the DB URI/// this is not regard to 
+// mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 
-let mongoDB = mongoose.connection;
-mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
-mongoDB.once('open', ()=>{
-  console.log('Connected to MongoDB...');
-});
+// let mongoDB = mongoose.connection;
+// mongoDB.on('error', console.error.bind(console, 'Connection Error:'));
+// mongoDB.once('open', ()=>{
+//   console.log('Connected to MongoDB...');
+// });
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
